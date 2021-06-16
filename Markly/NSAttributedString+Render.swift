@@ -9,6 +9,11 @@ import Foundation
 
 public extension NSAttributedString {
 
+    /// Creates and returns an `NSAttributedString` from a Markly-formatted string.
+    /// - Parameters:
+    ///   - text: Markly-formatted string.
+    ///   - style: Markly styling configuration.
+    /// - Returns: Attributed string resulting from parsing and converting the Markly-formatted content.
     static func markly(_ text: String, style: MarklyStyle = .default) -> NSAttributedString {
         let parser = Parser()
         let root = parser.parse(text)

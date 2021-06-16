@@ -27,6 +27,7 @@ private extension NSColor {
 }
 #endif
 
+/// Markly styling configuration
 public struct MarklyStyle {
 #if canImport(UIKit)
     public typealias Color = UIColor
