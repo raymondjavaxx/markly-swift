@@ -19,7 +19,11 @@ class ViewController: UIViewController {
     }()
 
     override func viewDidLoad() {
-        self.view.backgroundColor = .systemBackground
+        if #available(iOS 13.0, *) {
+            self.view.backgroundColor = .systemBackground
+        } else {
+            self.view.backgroundColor = .white
+        }
 
         view.addSubview(textView)
 
@@ -31,8 +35,7 @@ class ViewController: UIViewController {
         ])
 
         let text = "Features:\n\n* It supports lists\n* Like *this* one\n\nIt also supports *bold text*."
-        print(NSAttributedString.markly(text))
-        textView.attributedText = .markly(text)
+        textView.attributedText = NSAttributedString.markly(text)
     }
 
 }
