@@ -1,0 +1,13 @@
+opt_in_rules:
+  - file_header
+
+file_header:
+  required_pattern: |
+    \/\/
+    \/\/  SWIFTLINT_CURRENT_FILENAME
+    \/\/  (Markly|MarklyTests|DemoApp)
+    \/\/
+    \/\/  Created by .*? on \d{1,2}\/\d{1,2}\/\d{2}\.
+    (\/\/
+    )?\/\/  Copyright (©|\(c\)) \d{4} Ramon Torres(. All rights reserved.)?
+    \/\/

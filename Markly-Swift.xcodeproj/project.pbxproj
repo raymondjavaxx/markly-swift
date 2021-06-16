@@ -251,6 +251,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = "Ramon Torres";
 				TargetAttributes = {
 					F12A6AC7263DE32A00F18F51 = {
 						CreatedOnToolsVersion = 12.4;
