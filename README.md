@@ -44,7 +44,7 @@ world
 ## Usage
 
 Markly-Swift allows you to create attributed strings from a
-markly-formatted string via the `NSAttributedString.markly()` static method.
+markly-formatted string via the `NSAttributedString(markly:)` convenience initializer.
 
 
 ```swift
@@ -53,14 +53,14 @@ import Markly
 // ...
 
 let marklyContent = "*Hello world*"
-textView.attributedString = NSAttributedString.markly(marklyContent)
+textView.attributedString = NSAttributedString(markly: marklyContent)
 ```
 
 The generated attributed string will use the default system font and label
 color. But you can override this behavior by providing your own style preferences:
 
 ```swift
-textView.attributedString = NSAttributedString.markly(marklyContent, style: MarklyStyle(
+textView.attributedString = NSAttributedString(markly: marklyContent, style: MarklyStyle(
     color: UIColor.red,
     font: UIFont(name: "CustomFont", size: 16),
     boldFont: UIFont(name: "CustomFont-Bold", size: 16)

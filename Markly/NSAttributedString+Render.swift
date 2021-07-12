@@ -29,15 +29,15 @@ import Foundation
 
 public extension NSAttributedString {
 
-    /// Creates and returns an `NSAttributedString` from a Markly-formatted string.
+    /// Creates an attributed string from a Markly-formatted string.
     /// - Parameters:
-    ///   - text: Markly-formatted string.
+    ///   - markly: Markly-formatted string.
     ///   - style: Markly styling configuration.
-    /// - Returns: Attributed string resulting from parsing and converting the Markly-formatted content.
-    static func markly(_ text: String, style: MarklyStyle = .default) -> NSAttributedString {
+    convenience init(markly: String, style: MarklyStyle = .default) {
         let parser = Parser()
-        let root = parser.parse(text)
-        return Self.render(root.children, style: style)
+        let root = parser.parse(markly)
+        let attributedString = Self.render(root.children, style: style)
+        self.init(attributedString: attributedString)
     }
 
 }

@@ -46,7 +46,7 @@ class ViewController: UIViewController {
                    "\n" +
                    "https://github.com/"
 
-        textView.attributedText = NSAttributedString.markly(text)
+        textView.attributedText = NSAttributedString(markly: text)
     }
 
 }
