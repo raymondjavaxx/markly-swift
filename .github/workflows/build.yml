@@ -1,0 +1,21 @@
+name: Build
+on:
+  push:
+    branches:
+      - "*"
+  pull_request:
+    branches:
+      - "*"
+jobs:
+  build-ios:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: List available Xcode versions
+        run: ls /Applications | grep Xcode
+      - uses: sersoft-gmbh/xcodebuild-action@v1
+        with:
+          project: Markly-Swift.xcodeproj
+          scheme: MarklyTests
+          destination: platform=iOS Simulator,name=iPhone 8,OS=14.4
+          action: test
