@@ -22,12 +22,6 @@
 		F1D8730526781DEF00E8F8B6 /* MarklyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D8730426781DEF00E8F8B6 /* MarklyStyle.swift */; };
 		F1D8730E26786C7300E8F8B6 /* ParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D8730D26786C7300E8F8B6 /* ParserTests.swift */; };
 		F1D8731026786C7300E8F8B6 /* Markly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F12A6AC8263DE32A00F18F51 /* Markly.framework */; };
-		F1D8731D2678797400E8F8B6 /* NSAttributedString+Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12A6AFA263F996A00F18F51 /* NSAttributedString+Render.swift */; };
-		F1D8731E2678797400E8F8B6 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12A6AE8263DE5BA00F18F51 /* Parser.swift */; };
-		F1D8731F2678797400E8F8B6 /* TokenNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12A6AE4263DE35700F18F51 /* TokenNode.swift */; };
-		F1D873202678797400E8F8B6 /* MarklyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D8730426781DEF00E8F8B6 /* MarklyStyle.swift */; };
-		F1D873212678797400E8F8B6 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12A6AEC263F434900F18F51 /* Stack.swift */; };
-		F1D873222678797400E8F8B6 /* String+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12A6AF0263F456300F18F51 /* String+Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -360,12 +354,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1D8730E26786C7300E8F8B6 /* ParserTests.swift in Sources */,
-				F1D873202678797400E8F8B6 /* MarklyStyle.swift in Sources */,
-				F1D8731F2678797400E8F8B6 /* TokenNode.swift in Sources */,
-				F1D873222678797400E8F8B6 /* String+Util.swift in Sources */,
-				F1D8731D2678797400E8F8B6 /* NSAttributedString+Render.swift in Sources */,
-				F1D873212678797400E8F8B6 /* Stack.swift in Sources */,
-				F1D8731E2678797400E8F8B6 /* Parser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import Markly
 
 class ParserTests: XCTestCase {
 
