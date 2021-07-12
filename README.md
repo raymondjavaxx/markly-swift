@@ -2,15 +2,14 @@
 
 Swift implementation of Markly. A micro subset of Markdown.
 
-## Differences with markdown.
+## Differences with Markdown.
 
 Markly only supports the most basic and safe subset of Markdown: paragraphs,
-bold text, and unordered lists. Everything else is not supported. However, there
-are some differences in how these features work.
+bold text, and unordered lists. Everything else is not supported. However, there are some differences in how these features work.
 
 ### Bold text
 
-Markly uses single asterisks `*` as delimiter for bold text:
+Markly uses single asterisks `*` as the delimiter for bold text:
 
 ```markdown
 *bold* text
@@ -18,8 +17,7 @@ Markly uses single asterisks `*` as delimiter for bold text:
 
 ### Unordered lists
 
-Just like Markdown, consecutive lines that start with dashes or asterisks followed
-by a space, will render as an unordered list. However, nested list aren't supported in Markly.
+Just like Markdown, consecutive lines that start with dashes or asterisks followed by a space will render as an unordered list. However, nested lists aren't supported in Markly.
 
 ```markdown
 - Item one
@@ -36,7 +34,7 @@ or
 ### Paragraphs and line breaks
 
 In Markdown, hard line breaks [are ignored](https://daringfireball.net/projects/markdown/syntax#p)
-for valid reasons. In Markly, line breaks area always preserved. For example, the following will render as-is:
+for valid reasons. In Markly, line breaks are always preserved. For example, the following will render as-is:
 
 ```markdown
 Hello
