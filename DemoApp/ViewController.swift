@@ -35,7 +35,17 @@ class ViewController: UIViewController {
             textView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 16)
         ])
 
-        let text = "Features:\n\n* It supports lists\n* Like *this* one\n\nIt also supports *bold text*."
+        let text = "Features:\n" +
+                   "\n" +
+                   "* It supports lists\n" +
+                   "* Like *this* one\n" +
+                   "\n" +
+                   "It also supports *bold text*.\n" +
+                   "\n" +
+                   "Links are handled by the data detector:\n" +
+                   "\n" +
+                   "https://github.com/"
+
         textView.attributedText = NSAttributedString.markly(text)
     }
 
